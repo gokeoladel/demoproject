@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="This Test ran on Chrome(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="test.HotelTest">
+        <methods>
+          <include name="testcase1"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- test.HotelTest -->
+    </classes>
+  </test> <!-- This Test ran on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
